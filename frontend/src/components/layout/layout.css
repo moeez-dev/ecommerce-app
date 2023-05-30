@@ -1,0 +1,32 @@
+.active {
+    border-bottom: 2px solid black;
+}
+
+.navbar {
+    font-weight: bolder;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+
+}
+
+/* footer */
+
+.footer {
+    color: white;
+    padding: 25px;
+    background: linear-gradient(to right, rgb(10, 10, 10), rgb(51, 49, 49));
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 2rem;
+    text-transform: uppercase;
+}
+
+.footer a:hover {
+    color: rgb(153, 148, 148);
+    border-bottom: 2px solid wheat;
+}
