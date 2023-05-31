@@ -7,7 +7,7 @@ import cors from 'cors'
 import categoryRoutes from './route/categoryRoute.js'
 import productRoutes from './route/productRoute.js'
 import path from 'path'
-
+import {fileURLToPath} from 'url'
 
 //
 dotenv.config()
@@ -16,6 +16,9 @@ dotenv.config()
 
 connectDb()
 
+//
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 //rest object
 const app = express()
 
@@ -40,4 +43,3 @@ const port = process.env.PORT || 4000
 
 app.listen(port, () => {
     console.log(`server running on port ${port}`)
-})
